@@ -1,0 +1,12 @@
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\bin\Debug\saleManagement.exe.config
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\bin\Debug\saleManagement.exe
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\bin\Debug\saleManagement.pdb
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.Form1.resources
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.exe
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.pdb
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.item.resources
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.receipt.resources
