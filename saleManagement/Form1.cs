@@ -28,5 +28,23 @@ namespace saleManagement
             receipt formReceipt = new receipt();
             formReceipt.ShowDialog();
         }
+
+        private void btnItem_Click(object sender, EventArgs e)
+        {
+            item formItem = new item();
+            formItem.ShowDialog();
+        }
+
+        private void btnReceipt_Click(object sender, EventArgs e)
+        {
+            receipt formReceipt = new receipt();
+            formReceipt.ShowDialog();
+        }
+
+        private void btnDeliveryBill_Click(object sender, EventArgs e)
+        {
+            deliveryBill formDeliveryBill = new deliveryBill();
+            formDeliveryBill.ShowDialog();
+        }
     }
 }

@@ -10,3 +10,4 @@ C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\D
 C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.pdb
 C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.item.resources
 C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.receipt.resources
+C:\Users\ASUS\Desktop\Cuối kì CNPM\source\saleManagement\saleManagement\obj\Debug\saleManagement.deliveryBill.resources

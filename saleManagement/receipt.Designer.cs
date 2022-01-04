@@ -212,7 +212,7 @@ namespace saleManagement
             // 
             // btnAddReceipt
             // 
-            this.btnAddReceipt.Location = new System.Drawing.Point(418, 186);
+            this.btnAddReceipt.Location = new System.Drawing.Point(451, 147);
             this.btnAddReceipt.Name = "btnAddReceipt";
             this.btnAddReceipt.Size = new System.Drawing.Size(187, 67);
             this.btnAddReceipt.TabIndex = 17;

@@ -34,12 +34,6 @@ namespace saleManagement
             this.receiptMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.createReceiptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewReceiptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deliveryBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createDeliveryBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewDeliveryBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +41,11 @@ namespace saleManagement
             this.incomingStocksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outgoingStocksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnItem = new System.Windows.Forms.Button();
+            this.btnReceipt = new System.Windows.Forms.Button();
+            this.btnDeliveryBill = new System.Windows.Forms.Button();
+            this.btnStatistical = new System.Windows.Forms.Button();
+            this.btnRevenue = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,15 +54,13 @@ namespace saleManagement
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itemMenu,
-            this.customerToolStripMenuItem,
             this.receiptMenu,
-            this.ordersToolStripMenuItem,
             this.deliveryBillToolStripMenuItem,
             this.statisticalToolStripMenuItem,
             this.reneToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(667, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,48 +92,6 @@ namespace saleManagement
             this.viewReceiptToolStripMenuItem.Name = "viewReceiptToolStripMenuItem";
             this.viewReceiptToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewReceiptToolStripMenuItem.Text = "View receipt";
-            // 
-            // ordersToolStripMenuItem
-            // 
-            this.ordersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createOrderToolStripMenuItem,
-            this.viewOrdersToolStripMenuItem});
-            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
-            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
-            this.ordersToolStripMenuItem.Text = "Orders";
-            // 
-            // createOrderToolStripMenuItem
-            // 
-            this.createOrderToolStripMenuItem.Name = "createOrderToolStripMenuItem";
-            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.createOrderToolStripMenuItem.Text = "Create order";
-            // 
-            // viewOrdersToolStripMenuItem
-            // 
-            this.viewOrdersToolStripMenuItem.Name = "viewOrdersToolStripMenuItem";
-            this.viewOrdersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.viewOrdersToolStripMenuItem.Text = "View orders";
-            // 
-            // customerToolStripMenuItem
-            // 
-            this.customerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createCustomerToolStripMenuItem,
-            this.viewCustomerToolStripMenuItem});
-            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.customerToolStripMenuItem.Text = "Customer";
-            // 
-            // createCustomerToolStripMenuItem
-            // 
-            this.createCustomerToolStripMenuItem.Name = "createCustomerToolStripMenuItem";
-            this.createCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.createCustomerToolStripMenuItem.Text = "Create customer";
-            // 
-            // viewCustomerToolStripMenuItem
-            // 
-            this.viewCustomerToolStripMenuItem.Name = "viewCustomerToolStripMenuItem";
-            this.viewCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.viewCustomerToolStripMenuItem.Text = "View customer";
             // 
             // deliveryBillToolStripMenuItem
             // 
@@ -186,11 +141,64 @@ namespace saleManagement
             this.reneToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.reneToolStripMenuItem.Text = "Revenue monthly";
             // 
+            // btnItem
+            // 
+            this.btnItem.Location = new System.Drawing.Point(65, 71);
+            this.btnItem.Name = "btnItem";
+            this.btnItem.Size = new System.Drawing.Size(145, 43);
+            this.btnItem.TabIndex = 1;
+            this.btnItem.Text = "Item Management";
+            this.btnItem.UseVisualStyleBackColor = true;
+            this.btnItem.Click += new System.EventHandler(this.btnItem_Click);
+            // 
+            // btnReceipt
+            // 
+            this.btnReceipt.Location = new System.Drawing.Point(252, 71);
+            this.btnReceipt.Name = "btnReceipt";
+            this.btnReceipt.Size = new System.Drawing.Size(145, 43);
+            this.btnReceipt.TabIndex = 2;
+            this.btnReceipt.Text = "Receipt Management";
+            this.btnReceipt.UseVisualStyleBackColor = true;
+            this.btnReceipt.Click += new System.EventHandler(this.btnReceipt_Click);
+            // 
+            // btnDeliveryBill
+            // 
+            this.btnDeliveryBill.Location = new System.Drawing.Point(453, 71);
+            this.btnDeliveryBill.Name = "btnDeliveryBill";
+            this.btnDeliveryBill.Size = new System.Drawing.Size(145, 43);
+            this.btnDeliveryBill.TabIndex = 3;
+            this.btnDeliveryBill.Text = "Delivery Bill";
+            this.btnDeliveryBill.UseVisualStyleBackColor = true;
+            this.btnDeliveryBill.Click += new System.EventHandler(this.btnDeliveryBill_Click);
+            // 
+            // btnStatistical
+            // 
+            this.btnStatistical.Location = new System.Drawing.Point(155, 163);
+            this.btnStatistical.Name = "btnStatistical";
+            this.btnStatistical.Size = new System.Drawing.Size(145, 43);
+            this.btnStatistical.TabIndex = 4;
+            this.btnStatistical.Text = "Statistical";
+            this.btnStatistical.UseVisualStyleBackColor = true;
+            // 
+            // btnRevenue
+            // 
+            this.btnRevenue.Location = new System.Drawing.Point(349, 163);
+            this.btnRevenue.Name = "btnRevenue";
+            this.btnRevenue.Size = new System.Drawing.Size(145, 43);
+            this.btnRevenue.TabIndex = 5;
+            this.btnRevenue.Text = "Revenue Monthly";
+            this.btnRevenue.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(667, 279);
+            this.Controls.Add(this.btnRevenue);
+            this.Controls.Add(this.btnStatistical);
+            this.Controls.Add(this.btnDeliveryBill);
+            this.Controls.Add(this.btnReceipt);
+            this.Controls.Add(this.btnItem);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -209,12 +217,6 @@ namespace saleManagement
         private System.Windows.Forms.ToolStripMenuItem receiptMenu;
         private System.Windows.Forms.ToolStripMenuItem createReceiptToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewReceiptToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createCustomerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewCustomerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createOrderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewOrdersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deliveryBillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createDeliveryBillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewDeliveryBillToolStripMenuItem;
@@ -222,6 +224,11 @@ namespace saleManagement
         private System.Windows.Forms.ToolStripMenuItem incomingStocksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem outgoingStocksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reneToolStripMenuItem;
+        private System.Windows.Forms.Button btnItem;
+        private System.Windows.Forms.Button btnReceipt;
+        private System.Windows.Forms.Button btnDeliveryBill;
+        private System.Windows.Forms.Button btnStatistical;
+        private System.Windows.Forms.Button btnRevenue;
     }
 }
 
