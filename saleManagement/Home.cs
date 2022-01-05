@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace saleManagement
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
         }
@@ -45,6 +45,30 @@ namespace saleManagement
         {
             deliveryBill formDeliveryBill = new deliveryBill();
             formDeliveryBill.ShowDialog();
+        }
+
+        private void deliveryBillToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            deliveryBill formDeliveryBill = new deliveryBill();
+            formDeliveryBill.ShowDialog();
+        }
+
+        private void btnStatistical_Click(object sender, EventArgs e)
+        {
+            statistical formStatistical = new statistical();
+            formStatistical.ShowDialog();
+        }
+
+        private void reneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            revenueMonthly formRevenueMonthly = new revenueMonthly();
+            formRevenueMonthly.ShowDialog();
+        }
+
+        private void btnRevenue_Click(object sender, EventArgs e)
+        {
+            revenueMonthly formRevenueMonthly = new revenueMonthly();
+            formRevenueMonthly.ShowDialog();
         }
     }
 }

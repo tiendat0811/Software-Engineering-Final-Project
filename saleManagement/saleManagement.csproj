@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="revenueMonthly.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="revenueMonthly.Designer.cs">
+      <DependentUpon>revenueMonthly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistical.Designer.cs">
+      <DependentUpon>statistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="deliveryBill.cs">
       <SubType>Form</SubType>
@@ -78,8 +90,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>saleManagementDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="revenueMonthly.resx">
+      <DependentUpon>revenueMonthly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistical.resx">
+      <DependentUpon>statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deliveryBill.resx">
       <DependentUpon>deliveryBill.cs</DependentUpon>

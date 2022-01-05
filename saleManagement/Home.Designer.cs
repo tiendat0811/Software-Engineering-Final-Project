@@ -1,7 +1,7 @@
 ﻿
 namespace saleManagement
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,7 @@ namespace saleManagement
             this.reneToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(667, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(667, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,13 +84,13 @@ namespace saleManagement
             // createReceiptToolStripMenuItem
             // 
             this.createReceiptToolStripMenuItem.Name = "createReceiptToolStripMenuItem";
-            this.createReceiptToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.createReceiptToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.createReceiptToolStripMenuItem.Text = "Create receipt";
             // 
             // viewReceiptToolStripMenuItem
             // 
             this.viewReceiptToolStripMenuItem.Name = "viewReceiptToolStripMenuItem";
-            this.viewReceiptToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.viewReceiptToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.viewReceiptToolStripMenuItem.Text = "View receipt";
             // 
             // deliveryBillToolStripMenuItem
@@ -101,17 +101,18 @@ namespace saleManagement
             this.deliveryBillToolStripMenuItem.Name = "deliveryBillToolStripMenuItem";
             this.deliveryBillToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
             this.deliveryBillToolStripMenuItem.Text = "Delivery Bill";
+            this.deliveryBillToolStripMenuItem.Click += new System.EventHandler(this.deliveryBillToolStripMenuItem_Click);
             // 
             // createDeliveryBillToolStripMenuItem
             // 
             this.createDeliveryBillToolStripMenuItem.Name = "createDeliveryBillToolStripMenuItem";
-            this.createDeliveryBillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.createDeliveryBillToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.createDeliveryBillToolStripMenuItem.Text = "Create delivery bill";
             // 
             // viewDeliveryBillToolStripMenuItem
             // 
             this.viewDeliveryBillToolStripMenuItem.Name = "viewDeliveryBillToolStripMenuItem";
-            this.viewDeliveryBillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.viewDeliveryBillToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.viewDeliveryBillToolStripMenuItem.Text = "View delivery bill";
             // 
             // statisticalToolStripMenuItem
@@ -126,13 +127,13 @@ namespace saleManagement
             // incomingStocksToolStripMenuItem
             // 
             this.incomingStocksToolStripMenuItem.Name = "incomingStocksToolStripMenuItem";
-            this.incomingStocksToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.incomingStocksToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.incomingStocksToolStripMenuItem.Text = "Incoming stocks";
             // 
             // outgoingStocksToolStripMenuItem
             // 
             this.outgoingStocksToolStripMenuItem.Name = "outgoingStocksToolStripMenuItem";
-            this.outgoingStocksToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.outgoingStocksToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.outgoingStocksToolStripMenuItem.Text = "Outgoing stocks";
             // 
             // reneToolStripMenuItem
@@ -140,6 +141,7 @@ namespace saleManagement
             this.reneToolStripMenuItem.Name = "reneToolStripMenuItem";
             this.reneToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.reneToolStripMenuItem.Text = "Revenue monthly";
+            this.reneToolStripMenuItem.Click += new System.EventHandler(this.reneToolStripMenuItem_Click);
             // 
             // btnItem
             // 
@@ -179,6 +181,7 @@ namespace saleManagement
             this.btnStatistical.TabIndex = 4;
             this.btnStatistical.Text = "Statistical";
             this.btnStatistical.UseVisualStyleBackColor = true;
+            this.btnStatistical.Click += new System.EventHandler(this.btnStatistical_Click);
             // 
             // btnRevenue
             // 
@@ -188,8 +191,9 @@ namespace saleManagement
             this.btnRevenue.TabIndex = 5;
             this.btnRevenue.Text = "Revenue Monthly";
             this.btnRevenue.UseVisualStyleBackColor = true;
+            this.btnRevenue.Click += new System.EventHandler(this.btnRevenue_Click);
             // 
-            // Form1
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,7 +205,7 @@ namespace saleManagement
             this.Controls.Add(this.btnItem);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "Home";
             this.Text = "Sale Management";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
