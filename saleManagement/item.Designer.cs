@@ -123,7 +123,6 @@ namespace saleManagement
             this.inventoryDataGridViewTextBoxColumn.HeaderText = "inventory";
             this.inventoryDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.inventoryDataGridViewTextBoxColumn.Name = "inventoryDataGridViewTextBoxColumn";
-            this.inventoryDataGridViewTextBoxColumn.Width = 125;
             // 
             // nameItemDataGridViewTextBoxColumn
             // 
@@ -131,7 +130,6 @@ namespace saleManagement
             this.nameItemDataGridViewTextBoxColumn.HeaderText = "nameItem";
             this.nameItemDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameItemDataGridViewTextBoxColumn.Name = "nameItemDataGridViewTextBoxColumn";
-            this.nameItemDataGridViewTextBoxColumn.Width = 125;
             // 
             // idItemDataGridViewTextBoxColumn
             // 
@@ -139,11 +137,11 @@ namespace saleManagement
             this.idItemDataGridViewTextBoxColumn.HeaderText = "idItem";
             this.idItemDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idItemDataGridViewTextBoxColumn.Name = "idItemDataGridViewTextBoxColumn";
-            this.idItemDataGridViewTextBoxColumn.Width = 125;
             // 
             // itemGridView
             // 
             this.itemGridView.AutoGenerateColumns = false;
+            this.itemGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.itemGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.itemGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idItemDataGridViewTextBoxColumn,

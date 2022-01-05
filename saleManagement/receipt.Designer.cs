@@ -149,6 +149,7 @@ namespace saleManagement
             // itemGridView
             // 
             this.itemGridView.AllowUserToAddRows = false;
+            this.itemGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.itemGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.itemGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idItem,
@@ -168,7 +169,6 @@ namespace saleManagement
             this.idItem.MinimumWidth = 6;
             this.idItem.Name = "idItem";
             this.idItem.ReadOnly = true;
-            this.idItem.Width = 125;
             // 
             // nameItem
             // 
@@ -176,7 +176,6 @@ namespace saleManagement
             this.nameItem.MinimumWidth = 6;
             this.nameItem.Name = "nameItem";
             this.nameItem.ReadOnly = true;
-            this.nameItem.Width = 125;
             // 
             // quantity
             // 
@@ -184,7 +183,6 @@ namespace saleManagement
             this.quantity.MinimumWidth = 6;
             this.quantity.Name = "quantity";
             this.quantity.ReadOnly = true;
-            this.quantity.Width = 80;
             // 
             // price
             // 
@@ -192,7 +190,6 @@ namespace saleManagement
             this.price.MinimumWidth = 6;
             this.price.Name = "price";
             this.price.ReadOnly = true;
-            this.price.Width = 125;
             // 
             // label7
             // 

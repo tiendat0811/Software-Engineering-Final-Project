@@ -203,6 +203,7 @@ namespace saleManagement
             // orderGridView
             // 
             this.orderGridView.AutoGenerateColumns = false;
+            this.orderGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.orderGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idOrderDataGridViewTextBoxColumn,
@@ -225,7 +226,6 @@ namespace saleManagement
             this.idOrderDataGridViewTextBoxColumn.HeaderText = "idOrder";
             this.idOrderDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idOrderDataGridViewTextBoxColumn.Name = "idOrderDataGridViewTextBoxColumn";
-            this.idOrderDataGridViewTextBoxColumn.Width = 125;
             // 
             // idCustomerDataGridViewTextBoxColumn
             // 
@@ -233,7 +233,6 @@ namespace saleManagement
             this.idCustomerDataGridViewTextBoxColumn.HeaderText = "idCustomer";
             this.idCustomerDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idCustomerDataGridViewTextBoxColumn.Name = "idCustomerDataGridViewTextBoxColumn";
-            this.idCustomerDataGridViewTextBoxColumn.Width = 125;
             // 
             // paymentMethodDataGridViewTextBoxColumn
             // 
@@ -241,7 +240,6 @@ namespace saleManagement
             this.paymentMethodDataGridViewTextBoxColumn.HeaderText = "paymentMethod";
             this.paymentMethodDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.paymentMethodDataGridViewTextBoxColumn.Name = "paymentMethodDataGridViewTextBoxColumn";
-            this.paymentMethodDataGridViewTextBoxColumn.Width = 125;
             // 
             // creationDateDataGridViewTextBoxColumn
             // 
@@ -249,7 +247,6 @@ namespace saleManagement
             this.creationDateDataGridViewTextBoxColumn.HeaderText = "creationDate";
             this.creationDateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.creationDateDataGridViewTextBoxColumn.Name = "creationDateDataGridViewTextBoxColumn";
-            this.creationDateDataGridViewTextBoxColumn.Width = 125;
             // 
             // totalPriceDataGridViewTextBoxColumn
             // 
@@ -257,7 +254,6 @@ namespace saleManagement
             this.totalPriceDataGridViewTextBoxColumn.HeaderText = "totalPrice";
             this.totalPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.totalPriceDataGridViewTextBoxColumn.Name = "totalPriceDataGridViewTextBoxColumn";
-            this.totalPriceDataGridViewTextBoxColumn.Width = 125;
             // 
             // ordersBindingSource
             // 

@@ -46,6 +46,7 @@ namespace saleManagement
             // 
             // revenueMonthlyGridView
             // 
+            this.revenueMonthlyGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.revenueMonthlyGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.revenueMonthlyGridView.Location = new System.Drawing.Point(35, 59);
             this.revenueMonthlyGridView.Name = "revenueMonthlyGridView";

@@ -39,6 +39,7 @@ namespace saleManagement
             // 
             // incomingStockGridView
             // 
+            this.incomingStockGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.incomingStockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.incomingStockGridView.Location = new System.Drawing.Point(21, 53);
             this.incomingStockGridView.Name = "incomingStockGridView";
@@ -49,6 +50,7 @@ namespace saleManagement
             // 
             // outgoingStockGridView
             // 
+            this.outgoingStockGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.outgoingStockGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.outgoingStockGridView.Location = new System.Drawing.Point(618, 53);
             this.outgoingStockGridView.Name = "outgoingStockGridView";
