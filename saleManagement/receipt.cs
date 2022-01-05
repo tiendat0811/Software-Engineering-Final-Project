@@ -14,12 +14,12 @@ namespace saleManagement
 {
     public partial class receipt : Form
     {
-        SqlConnection con = new SqlConnection();
-        String strConn = ConfigurationManager.ConnectionStrings["dbconfig"].ConnectionString;
-
+        public SqlConnection con = new SqlConnection();
+        public String strConn = ConfigurationManager.ConnectionStrings["dbconfig"].ConnectionString;
+       
         public receipt()
         {
-            InitializeComponent();
+            
             con.ConnectionString = strConn;
         }
 
@@ -76,8 +76,9 @@ namespace saleManagement
         }
 
         //GET FROM DATABASE
-        private Boolean isItemExist(String idItem)
+        public Boolean isItemExist(String idItem)
         {
+            int count = 0;
             if (con.State != ConnectionState.Open)
                 con.Open();
             SqlCommand command;
@@ -94,8 +95,7 @@ namespace saleManagement
             {
                 Output = Output + dataReader.GetValue(0);
             }
-
-            int count = Int32.Parse(Output);
+            count = Int32.Parse(Output);
             dataReader.Close();
             command.Dispose();
             con.Close();
