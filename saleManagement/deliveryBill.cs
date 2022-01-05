@@ -44,6 +44,8 @@ namespace saleManagement
 
         private void deliveryBill_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'saleManagementDataSet.deliveryBill' table. You can move, or remove it, as needed.
+            this.deliveryBillTableAdapter.Fill(this.saleManagementDataSet.deliveryBill);
             // TODO: This line of code loads data into the 'saleManagementDataSet.orders' table. You can move, or remove it, as needed.
             this.ordersTableAdapter.Fill(this.saleManagementDataSet.orders);
 

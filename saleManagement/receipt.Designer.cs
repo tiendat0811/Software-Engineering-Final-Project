@@ -29,6 +29,7 @@ namespace saleManagement
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.createDate = new System.Windows.Forms.DateTimePicker();
@@ -51,7 +52,24 @@ namespace saleManagement
             this.tbQuantity = new System.Windows.Forms.TextBox();
             this.tbPrice = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.saleManagementDataSet = new saleManagement.saleManagementDataSet();
+            this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.receiptTableAdapter = new saleManagement.saleManagementDataSetTableAdapters.receiptTableAdapter();
+            this.receiptBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.detailReceiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.detailReceiptTableAdapter = new saleManagement.saleManagementDataSetTableAdapters.detailReceiptTableAdapter();
+            this.idReceiptDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idItemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.itemGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailReceiptBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -240,11 +258,97 @@ namespace saleManagement
             this.label8.TabIndex = 20;
             this.label8.Text = "You should add the item to the list before creating the receipt";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idReceiptDataGridViewTextBoxColumn,
+            this.idItemDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.priceDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.detailReceiptBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(704, 95);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(520, 642);
+            this.dataGridView1.TabIndex = 21;
+            // 
+            // saleManagementDataSet
+            // 
+            this.saleManagementDataSet.DataSetName = "saleManagementDataSet";
+            this.saleManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // receiptBindingSource
+            // 
+            this.receiptBindingSource.DataMember = "receipt";
+            this.receiptBindingSource.DataSource = this.saleManagementDataSet;
+            // 
+            // receiptTableAdapter
+            // 
+            this.receiptTableAdapter.ClearBeforeFill = true;
+            // 
+            // receiptBindingSource1
+            // 
+            this.receiptBindingSource1.DataMember = "receipt";
+            this.receiptBindingSource1.DataSource = this.saleManagementDataSet;
+            // 
+            // detailReceiptBindingSource
+            // 
+            this.detailReceiptBindingSource.DataMember = "detailReceipt";
+            this.detailReceiptBindingSource.DataSource = this.saleManagementDataSet;
+            // 
+            // detailReceiptTableAdapter
+            // 
+            this.detailReceiptTableAdapter.ClearBeforeFill = true;
+            // 
+            // idReceiptDataGridViewTextBoxColumn
+            // 
+            this.idReceiptDataGridViewTextBoxColumn.DataPropertyName = "idReceipt";
+            this.idReceiptDataGridViewTextBoxColumn.HeaderText = "idReceipt";
+            this.idReceiptDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idReceiptDataGridViewTextBoxColumn.Name = "idReceiptDataGridViewTextBoxColumn";
+            // 
+            // idItemDataGridViewTextBoxColumn
+            // 
+            this.idItemDataGridViewTextBoxColumn.DataPropertyName = "idItem";
+            this.idItemDataGridViewTextBoxColumn.HeaderText = "idItem";
+            this.idItemDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idItemDataGridViewTextBoxColumn.Name = "idItemDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
+            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(819, 36);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(311, 39);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "DETAIL RECEIPT";
+            // 
             // receipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 758);
+            this.ClientSize = new System.Drawing.Size(1260, 758);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tbPrice);
             this.Controls.Add(this.tbQuantity);
@@ -265,7 +369,13 @@ namespace saleManagement
             this.Controls.Add(this.label1);
             this.Name = "receipt";
             this.Text = "Receipt";
+            this.Load += new System.EventHandler(this.receipt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.itemGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detailReceiptBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +405,17 @@ namespace saleManagement
         private System.Windows.Forms.TextBox tbQuantity;
         private System.Windows.Forms.TextBox tbPrice;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private saleManagementDataSet saleManagementDataSet;
+        private System.Windows.Forms.BindingSource receiptBindingSource;
+        private saleManagementDataSetTableAdapters.receiptTableAdapter receiptTableAdapter;
+        private System.Windows.Forms.BindingSource receiptBindingSource1;
+        private System.Windows.Forms.BindingSource detailReceiptBindingSource;
+        private saleManagementDataSetTableAdapters.detailReceiptTableAdapter detailReceiptTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idReceiptDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idItemDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label9;
     }
 }

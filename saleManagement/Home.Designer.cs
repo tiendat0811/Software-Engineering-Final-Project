@@ -32,14 +32,8 @@ namespace saleManagement
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.itemMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.receiptMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.createReceiptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewReceiptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deliveryBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createDeliveryBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewDeliveryBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statisticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.incomingStocksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.outgoingStocksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnItem = new System.Windows.Forms.Button();
             this.btnReceipt = new System.Windows.Forms.Button();
@@ -73,68 +67,23 @@ namespace saleManagement
             // 
             // receiptMenu
             // 
-            this.receiptMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createReceiptToolStripMenuItem,
-            this.viewReceiptToolStripMenuItem});
             this.receiptMenu.Name = "receiptMenu";
             this.receiptMenu.Size = new System.Drawing.Size(79, 24);
             this.receiptMenu.Text = "Receipts";
             this.receiptMenu.Click += new System.EventHandler(this.receiptMenu_Click);
             // 
-            // createReceiptToolStripMenuItem
-            // 
-            this.createReceiptToolStripMenuItem.Name = "createReceiptToolStripMenuItem";
-            this.createReceiptToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
-            this.createReceiptToolStripMenuItem.Text = "Create receipt";
-            // 
-            // viewReceiptToolStripMenuItem
-            // 
-            this.viewReceiptToolStripMenuItem.Name = "viewReceiptToolStripMenuItem";
-            this.viewReceiptToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
-            this.viewReceiptToolStripMenuItem.Text = "View receipt";
-            // 
             // deliveryBillToolStripMenuItem
             // 
-            this.deliveryBillToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createDeliveryBillToolStripMenuItem,
-            this.viewDeliveryBillToolStripMenuItem});
             this.deliveryBillToolStripMenuItem.Name = "deliveryBillToolStripMenuItem";
             this.deliveryBillToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
             this.deliveryBillToolStripMenuItem.Text = "Delivery Bill";
             this.deliveryBillToolStripMenuItem.Click += new System.EventHandler(this.deliveryBillToolStripMenuItem_Click);
             // 
-            // createDeliveryBillToolStripMenuItem
-            // 
-            this.createDeliveryBillToolStripMenuItem.Name = "createDeliveryBillToolStripMenuItem";
-            this.createDeliveryBillToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.createDeliveryBillToolStripMenuItem.Text = "Create delivery bill";
-            // 
-            // viewDeliveryBillToolStripMenuItem
-            // 
-            this.viewDeliveryBillToolStripMenuItem.Name = "viewDeliveryBillToolStripMenuItem";
-            this.viewDeliveryBillToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.viewDeliveryBillToolStripMenuItem.Text = "View delivery bill";
-            // 
             // statisticalToolStripMenuItem
             // 
-            this.statisticalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.incomingStocksToolStripMenuItem,
-            this.outgoingStocksToolStripMenuItem});
             this.statisticalToolStripMenuItem.Name = "statisticalToolStripMenuItem";
             this.statisticalToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.statisticalToolStripMenuItem.Text = "Statistical";
-            // 
-            // incomingStocksToolStripMenuItem
-            // 
-            this.incomingStocksToolStripMenuItem.Name = "incomingStocksToolStripMenuItem";
-            this.incomingStocksToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
-            this.incomingStocksToolStripMenuItem.Text = "Incoming stocks";
-            // 
-            // outgoingStocksToolStripMenuItem
-            // 
-            this.outgoingStocksToolStripMenuItem.Name = "outgoingStocksToolStripMenuItem";
-            this.outgoingStocksToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
-            this.outgoingStocksToolStripMenuItem.Text = "Outgoing stocks";
             // 
             // reneToolStripMenuItem
             // 
@@ -219,14 +168,8 @@ namespace saleManagement
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem itemMenu;
         private System.Windows.Forms.ToolStripMenuItem receiptMenu;
-        private System.Windows.Forms.ToolStripMenuItem createReceiptToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewReceiptToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deliveryBillToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createDeliveryBillToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewDeliveryBillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statisticalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem incomingStocksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem outgoingStocksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reneToolStripMenuItem;
         private System.Windows.Forms.Button btnItem;
         private System.Windows.Forms.Button btnReceipt;

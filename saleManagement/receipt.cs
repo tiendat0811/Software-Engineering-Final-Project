@@ -172,7 +172,7 @@ namespace saleManagement
             SqlDataAdapter adapter = new SqlDataAdapter();
             string sql = "";
 
-            sql = "Update item set inventory = "+quantity+"where idItem = '"+idItem+"'";
+            sql = "Update item set inventory = inventory + "+quantity+"where idItem = '"+idItem+"'";
 
             command = new SqlCommand(sql, con);
 
@@ -202,6 +202,15 @@ namespace saleManagement
             command.Connection.Close();
             command.Dispose();
             con.Close();
+        }
+
+        private void receipt_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'saleManagementDataSet.detailReceipt' table. You can move, or remove it, as needed.
+            this.detailReceiptTableAdapter.Fill(this.saleManagementDataSet.detailReceipt);
+            // TODO: This line of code loads data into the 'saleManagementDataSet.receipt' table. You can move, or remove it, as needed.
+            this.receiptTableAdapter.Fill(this.saleManagementDataSet.receipt);
+
         }
     }
 }
