@@ -113,9 +113,8 @@ namespace saleManagement
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
             String sql = "";
-
             sql = "Insert into receipt values('" + idReceipt + "','" + idAccountant + "','" + creationDate.ToString()+"','')";
-            MessageBox.Show(sql);
+
             command = new SqlCommand(sql, con);
             adapter.InsertCommand = new SqlCommand(sql, con);
             adapter.InsertCommand.ExecuteNonQuery();
