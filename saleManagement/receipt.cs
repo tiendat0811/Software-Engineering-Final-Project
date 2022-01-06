@@ -19,7 +19,7 @@ namespace saleManagement
        
         public receipt()
         {
-            
+            InitializeComponent();
             con.ConnectionString = strConn;
         }
 
@@ -59,6 +59,7 @@ namespace saleManagement
             }
             updateTotalPrice(idReceipt);
             clearInput();
+            MessageBox.Show("Create receipt successfully!");
         }
 
         private void clearInput()

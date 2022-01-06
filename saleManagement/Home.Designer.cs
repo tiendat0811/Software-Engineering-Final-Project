@@ -146,7 +146,7 @@ namespace saleManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 279);
+            this.ClientSize = new System.Drawing.Size(667, 250);
             this.Controls.Add(this.btnRevenue);
             this.Controls.Add(this.btnStatistical);
             this.Controls.Add(this.btnDeliveryBill);

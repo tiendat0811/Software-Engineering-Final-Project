@@ -90,6 +90,8 @@ namespace saleManagement
             }
 
             createDeliveryBill(idDeliveryBill, idOrder, idAccountant, creationDate, orderStatus, paymentStatus);
+            clearInput();
+            MessageBox.Show("Create delivery bill successfully!");
         }
 
         private void createDeliveryBill(string idDeliveryBill, string idOrder, string idAccountant, string creationDate, string orderStatus, string paymentStatus)
@@ -108,6 +110,17 @@ namespace saleManagement
             command.Connection.Close();
             command.Dispose();
             con.Close();
+        }
+
+        private void clearInput()
+        {
+            tbIdDeliveryBill.Text = "";
+            tbIdAccountant.Text = "";
+            tbIdOrder.Text = "Click on the right tablel to select";
+            rbBeingTransported.Checked = false;
+            rbDelivered.Checked = false;
+            rbPaid.Checked = false;
+            rbUnpaid.Checked = false;
         }
     }
 }
