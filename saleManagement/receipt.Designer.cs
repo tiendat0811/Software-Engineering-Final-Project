@@ -61,12 +61,13 @@ namespace saleManagement
             this.label9 = new System.Windows.Forms.Label();
             this.receiptBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.saleManagementDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.receiptBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.idReceiptDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idAccountantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.creationDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.receiptBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.saleManagementDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.itemGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailReceiptBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSet)).BeginInit();
@@ -74,8 +75,8 @@ namespace saleManagement
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -326,16 +327,6 @@ namespace saleManagement
             this.dataGridView1.Size = new System.Drawing.Size(559, 654);
             this.dataGridView1.TabIndex = 23;
             // 
-            // saleManagementDataSetBindingSource
-            // 
-            this.saleManagementDataSetBindingSource.DataSource = this.saleManagementDataSet;
-            this.saleManagementDataSetBindingSource.Position = 0;
-            // 
-            // receiptBindingSource3
-            // 
-            this.receiptBindingSource3.DataMember = "receipt";
-            this.receiptBindingSource3.DataSource = this.saleManagementDataSet;
-            // 
             // idReceiptDataGridViewTextBoxColumn
             // 
             this.idReceiptDataGridViewTextBoxColumn.DataPropertyName = "idReceipt";
@@ -364,11 +355,32 @@ namespace saleManagement
             this.totalPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.totalPriceDataGridViewTextBoxColumn.Name = "totalPriceDataGridViewTextBoxColumn";
             // 
+            // receiptBindingSource3
+            // 
+            this.receiptBindingSource3.DataMember = "receipt";
+            this.receiptBindingSource3.DataSource = this.saleManagementDataSet;
+            // 
+            // saleManagementDataSetBindingSource
+            // 
+            this.saleManagementDataSetBindingSource.DataSource = this.saleManagementDataSet;
+            this.saleManagementDataSetBindingSource.Position = 0;
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(476, 252);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(137, 43);
+            this.btnExport.TabIndex = 24;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // receipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1260, 758);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -399,8 +411,8 @@ namespace saleManagement
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,5 +457,6 @@ namespace saleManagement
         private System.Windows.Forms.DataGridViewTextBoxColumn totalPriceDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource receiptBindingSource3;
         private System.Windows.Forms.BindingSource saleManagementDataSetBindingSource;
+        private System.Windows.Forms.Button btnExport;
     }
 }

@@ -57,15 +57,16 @@ namespace saleManagement
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.deliveryBillBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.deliveryBillTableAdapter = new saleManagement.saleManagementDataSetTableAdapters.deliveryBillTableAdapter();
             this.idDeliveryBillDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idOrderDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idAccountantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.creationDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deliveryBillBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.deliveryBillTableAdapter = new saleManagement.saleManagementDataSetTableAdapters.deliveryBillTableAdapter();
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.orderGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saleManagementDataSet)).BeginInit();
@@ -319,25 +320,6 @@ namespace saleManagement
             this.dataGridView1.Size = new System.Drawing.Size(1097, 243);
             this.dataGridView1.TabIndex = 18;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(421, 470);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(280, 39);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "DELIVERY BILL";
-            // 
-            // deliveryBillBindingSource
-            // 
-            this.deliveryBillBindingSource.DataMember = "deliveryBill";
-            this.deliveryBillBindingSource.DataSource = this.saleManagementDataSet;
-            // 
-            // deliveryBillTableAdapter
-            // 
-            this.deliveryBillTableAdapter.ClearBeforeFill = true;
-            // 
             // idDeliveryBillDataGridViewTextBoxColumn
             // 
             this.idDeliveryBillDataGridViewTextBoxColumn.DataPropertyName = "idDeliveryBill";
@@ -380,11 +362,41 @@ namespace saleManagement
             this.paymentStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.paymentStatusDataGridViewTextBoxColumn.Name = "paymentStatusDataGridViewTextBoxColumn";
             // 
+            // deliveryBillBindingSource
+            // 
+            this.deliveryBillBindingSource.DataMember = "deliveryBill";
+            this.deliveryBillBindingSource.DataSource = this.saleManagementDataSet;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(421, 470);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(280, 39);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "DELIVERY BILL";
+            // 
+            // deliveryBillTableAdapter
+            // 
+            this.deliveryBillTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(112, 448);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(131, 42);
+            this.btnExport.TabIndex = 20;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // deliveryBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 787);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
@@ -456,5 +468,6 @@ namespace saleManagement
         private System.Windows.Forms.DataGridViewTextBoxColumn creationDateDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentStatusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnExport;
     }
 }
